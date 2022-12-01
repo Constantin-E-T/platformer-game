@@ -1,5 +1,6 @@
 import Phaser from 'phaser';
 import PlayScene from './scenes/Play';
+import Preload from './scenes/Preload';
 
 
 
@@ -13,7 +14,7 @@ const SHARED_CONFIG = {
   height: HEIGHT,
 }
 
-const Scenes = [PlayScene];
+const Scenes = [Preload, PlayScene];
 
 const createScene = Scene => new Scene(SHARED_CONFIG)
 
